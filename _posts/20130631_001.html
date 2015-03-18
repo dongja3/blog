@@ -1,0 +1,10 @@
+---
+layout: default
+title: How to get the primary key from an JPA Entity
+---
+<h2>{{ page.title }}</h2>
+<p> This functionality was added in JPA 2.0. Simply call:
+<br>
+Object id = entityManagerFactory.getPersistenceUnitUtil().getIdentifier(entity);
+</p>
+<p>{{ page.date | date_to_string }}</p>
