@@ -4,7 +4,7 @@ title: Apache Http client thread stuck
 ---
 <h2>{{ page.title }}</h2>
 <p> PoolingConnectionManager maintains a maximum limit of connection on a per route basis and in total. Per default this implementation will create no more than than 2 concurrent connections per given route and no more 20 connections in total. For many real-world applications these limits may prove too constraining, especially if they use HTTP as a transport protocol for their services. Connection limits, however, can be adjusted using HTTP parameters.
-<br>  http://hc.apache.org/httpcomponents-client-ga/httpclient/apidocs/org/apache/http/impl/conn/PoolingClientConnectionManager.html
+<br>  <a href="http://hc.apache.org/httpcomponents-client-ga/httpclient/apidocs/org/apache/http/impl/conn/PoolingClientConnectionManager.html">PoolingClientConnectionManager Java API</a>
 <br>
 
 
