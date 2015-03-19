@@ -1,0 +1,56 @@
+---
+layout: default
+title: Apaach Http client thread stuck
+---
+<h2>{{ page.title }}</h2>
+<p> PoolingConnectionManager maintains a maximum limit of connection on a per route basis and in total. Per default this implementation will create no more than than 2 concurrent connections per given route and no more 20 connections in total. For many real-world applications these limits may prove too constraining, especially if they use HTTP as a transport protocol for their services. Connection limits, however, can be adjusted using HTTP parameters.
+<br>  http://hc.apache.org/httpcomponents-client-ga/httpclient/apidocs/org/apache/http/impl/conn/PoolingClientConnectionManager.html
+<br>
+
+
+<Mar 17, 2015 11:14:38 AM HKT> <Error> <WebLogicServer> <BEA-000337> <[STUCK] ExecuteThread: '399' for queue: 'weblogic.kernel.Default (self-tuning)' has been busy for "684" seconds working on the request "Workmanager: default, Version: 1, Scheduled=true, Started=true, Started time: 684330 ms
+[
+GET /wls_ath_con/proxy/wls_dom_athcon/service/FeatureService/features?_dc=1426561394120 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+X-Requested-With: XMLHttpRequest
+
+]", which is more than the configured time (StuckThreadMaxTime) of "600" seconds. Stack trace:
+Thread-446 "[STUCK] ExecuteThread: '399' for queue: 'weblogic.kernel.Default (self-tuning)'" <alive, suspended, parked, priority=1, DAEMON> {
+    sun.misc.Unsafe.park(Unsafe.java:???)
+    java.util.concurrent.locks.LockSupport.park(LockSupport.java:156)
+    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1987)
+    org.apache.http.pool.PoolEntryFuture.await(PoolEntryFuture.java:131)
+    org.apache.http.pool.AbstractConnPool.getPoolEntryBlocking(AbstractConnPool.java:281)
+    org.apache.http.pool.AbstractConnPool.access$000(AbstractConnPool.java:62)
+    org.apache.http.pool.AbstractConnPool$2.getPoolEntry(AbstractConnPool.java:176)
+    org.apache.http.pool.AbstractConnPool$2.getPoolEntry(AbstractConnPool.java:172)
+    org.apache.http.pool.PoolEntryFuture.get(PoolEntryFuture.java:100)
+    org.apache.http.impl.conn.PoolingClientConnectionManager.leaseConnection(PoolingClientConnectionManager.java:212)
+    org.apache.http.impl.conn.PoolingClientConnectionManager$1.getConnection(PoolingClientConnectionManager.java:199)
+    org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:456)
+    org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+    com.oocl.frm.authorization.httpproxy.ProxyServlet.service(ProxyServlet.java:111)
+    javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+    weblogic.servlet.internal.StubSecurityHelper$ServletServiceAction.run(StubSecurityHelper.java:227)
+    weblogic.servlet.internal.StubSecurityHelper.invokeServlet(StubSecurityHelper.java:125)
+    weblogic.servlet.internal.ServletStubImpl.execute(ServletStubImpl.java:301)
+    weblogic.servlet.internal.TailFilter.doFilter(TailFilter.java:26)
+    weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+    com.oocl.csc.frm.sso.filter.LoginCheckFilter.doFilter(LoginCheckFilter.java:93)
+    weblogic.servlet.internal.FilterChainImpl.doFilter(FilterChainImpl.java:60)
+    weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.wrapRun(WebAppServletContext.java:3748)
+    weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:3714)
+    weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+    weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+    weblogic.servlet.internal.WebAppServletContext.securedExecute(WebAppServletContext.java:2283)
+    weblogic.servlet.internal.WebAppServletContext.execute(WebAppServletContext.java:2182)
+    weblogic.servlet.internal.ServletRequestImpl.run(ServletRequestImpl.java:1491)
+    weblogic.work.ExecuteThread.execute(ExecuteThread.java:256)
+    weblogic.work.ExecuteThread.run(ExecuteThread.java:221)
+
+
+
+</p>
+<p>{{ page.date | date_to_string }}</p>
