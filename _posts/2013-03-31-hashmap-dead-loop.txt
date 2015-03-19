@@ -1,10 +1,10 @@
----
+ï»¿---
 layout: default
-title: Ö´ĞĞHashMap.getÊ±½øÈëËÀÑ­»·,CPU ÏûºÄºÜ¸ß
+title: æ‰§è¡ŒHashMap.getæ—¶è¿›å…¥æ­»å¾ªç¯,CPU æ¶ˆè€—å¾ˆé«˜
 ---
 
 <h2>{{ page.title }}</h2>
-<p> HashMapÊÇ·ÇÏß³Ì°²È«µÄ£¬ÔÚ²¢·¢³¡¾°ÖĞÈç¹û²»±£³Ö×ã¹»µÄÍ¬²½£¬¾ÍÓĞ¿ÉÄÜÔÚÖ´ĞĞHashMap.getÊ±½øÈëËÀÑ­»·£¬½«CPUµÄÏûºÄµ½ 100%
+<p> HashMapæ˜¯éçº¿ç¨‹å®‰å…¨çš„ï¼Œåœ¨å¹¶å‘åœºæ™¯ä¸­å¦‚æœä¸ä¿æŒè¶³å¤Ÿçš„åŒæ­¥ï¼Œå°±æœ‰å¯èƒ½åœ¨æ‰§è¡ŒHashMap.getæ—¶è¿›å…¥æ­»å¾ªç¯ï¼Œå°†CPUçš„æ¶ˆè€—åˆ° 100%
 <br>
 See detailed information:
 <a href="http://blog.csdn.net/mr__fang/article/details/6961304" target=_blank>http://blog.csdn.net/mr__fang/article/details/6961304</a>
