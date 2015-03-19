@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 执行 HashMap.get时进入死循环，将CPU的消耗到 100%
+title: 执行HashMap.get时进入死循环，将CPU消耗到100%
 ---
 <h2>{{ page.title }}</h2>
 <p> HashMap是非线程安全的，在并发场景中如果不保持足够的同步，就有可能在执行HashMap.get时进入死循环，将CPU的消耗到 100%
