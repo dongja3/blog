@@ -1,8 +1,7 @@
-﻿---
+---
 layout: default
 title: 自动识别中间件系统(Auto-ID Middleware),以前做的，分享给大家
 ---
-
 
 <h2>{{ page.title }}</h2>
 <p> Auto-ID Middleware是一个中间件系统，能够跟各种不同硬件厂商的标签读/写器相连，采集及存储识读器检测到的电子标签/条形码的信息，并提供接口与SAP AII、CIP和其他ERP系统相连。它的主要特点是：
