@@ -1,26 +1,0 @@
-- - - 
- l a y o u t :   d e f a u l t 
- t i t l e :  NåRMPZv„N N*êR¨‹ÆR+N-•ôNö ( A u t o - I D   M i d d l e w a r e ) ,RN«~Ùg	— ‰v„gSË 
- - - - 
- < h 2 > { {   p a g e . t i t l e   } } < / h 2 > 
- 
- A u t o - I D   M i d d l e w a r ef/N N*N-•ôNö|û~ßÿ€ýYßTyÍNTxlNöS‚UFv„h{~‹û /Q™VhvøÞÿ‘Ç–ÆSÊ[XP¨‹Æ‹ûVhhÀmKR0v„u5[Ph{~ /ga_bxv„Oá`oÿ^vcÐO›c¥SãN S A P   A I I0 C I PTŒQvNÖ E R P|û~ßvøÞ0[ƒv„N;‰ryp¹f/ÿ 
- < u l > 
- < l i >SïNåTeöÞc¥ /c§R6YN*NTxlNöS‚UFv„ A u t o - I D‹û /Q™‹¾Yÿ < / l i > 
- < l i >‘Çu( P l u g - i nTŒ A g e n tv„g:R6ÿbŠga_bxTŒ R F I Du5[Ph{~0h{~‹Æ‹ûVhTŒh{~bSSpg:0bKc_TŒVú[šh{~‹û /Q™‹¾YÿÇ T C P / I PbN2Sã‹¯v„e¹_etTR0TN ^sSðN-ÿ < / l i > 
- < l i >Çu(b7ê[šNINûR¡v„g:R6ÿpum;e/cTyÍ[žeöb—^[žeöv„ T a gepcn‘Ç–ÆTŒ'TÁbSS;‘ÿ < / l i > 
- < l i >e/cYyÍ_ e>0hQÆv„Yèc¥SãTkeb_keW0O  T a gOá`oÿY‚ S O A P0 H T T P0 J M S0 F T P{Iÿ T a gOá`oSïNå~ßN W0\ˆÅW( P M Le‡hcN-SÑ~ÙYè|û~ßÿ < / l i > 
- < l i >cÐO› W e b˜u—bvô‰Âe¹O¿W0O›u(b7‘Mn0vÑc§|û~ßSÊbgˆLh{~v„‹û /Q™;‘ÿ < / l i > 
- < l i >e/cYyÍepcn^“|û~ßÿY‚ O r a c l e0 M S   S Q L   S e r v e r0 M y S Q L0 P o s t g r e S Q LSÊ M a x D Bÿ < / l i > 
- < l i > M i d d l e w a r ef/ J a v azv„|û~ßoNöÿSïÐˆLW(YyÍdÍO\|û~ßTŒ A p p l i c a t i o n   S e r v e rN
-ÿ < / l i > 
- < l i > M i d d l e w a r ef/ON~§^”u(   ( E n t e r p r i s e   A p p l i c a t i o n )ÿQwg	šØSï—``'0[‰Qh`'0hQÆS0Sïbi\U`'0Sï‘Mn`'SÊ‚oY}v„`'€ýchÿ < / l i > 
- < / u l > 
- 
- < b r > 
- g i t   r e p o s i t o r y :   < a   h r e f = " h t t p s : / / g i t h u b . c o m / d o n g j a 3 / R f i d M i d d l e w a r e . g i t " > h t t p s : / / g i t h u b . c o m / d o n g j a 3 / R f i d M i d d l e w a r e . g i t < / a > 
- < b r > 
- < a   h r e f = " d o n g j a 3 . g i t h u b . i o / b l o g / f i l e s / M i d d l e w a r e _ S R S _ 1 . 0 . p d f >— lB‰Äh<‹ôfNf ( S o f t w a r e   R e q u i r e m e n t   S p e c i f i c a t i o n ) < / a > 
- 
- < / p > 
- < p > { {   p a g e . d a t e   |   d a t e _ t o _ s t r i n g   } } < / p > 
