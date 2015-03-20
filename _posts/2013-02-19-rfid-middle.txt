@@ -1,25 +1,26 @@
----
-layout: default
-title: ÒÔÇ°×öµÄÒ»¸ö×Ô¶¯Ê¶±ğÖĞ¼ä¼ş(Auto-ID Middleware),·ÖÏí¸øÓĞĞèÒªµÄÅóÓÑ
----
-<h2>{{ page.title }}</h2>
-
-Auto-ID MiddlewareÊÇÒ»¸öÖĞ¼ä¼şÏµÍ³£¬ÄÜ¹»¸ú¸÷ÖÖ²»Í¬Ó²¼ş³§ÉÌµÄ±êÇ©¶Á/Ğ´Æ÷ÏàÁ¬£¬²É¼¯¼°´æ´¢Ê¶¶ÁÆ÷¼ì²âµ½µÄµç×Ó±êÇ©/ÌõĞÎÂëµÄĞÅÏ¢£¬²¢Ìá¹©½Ó¿ÚÓëSAP AII¡¢CIPºÍÆäËûERPÏµÍ³ÏàÁ¬¡£ËüµÄÖ÷ÒªÌØµãÊÇ£º
-<ul>
-<li>¿ÉÒÔÍ¬Ê±Á¬½Ó/¿ØÖÆ¶à¸ö²»Í¬Ó²¼ş³§ÉÌµÄAuto-ID¶Á/Ğ´Éè±¸£»</li>
-<li>²ÉÓÃPlug-inºÍAgentµÄ»úÖÆ£¬°ÑÌõĞÎÂëºÍRFIDµç×Ó±êÇ©¡¢±êÇ©Ê¶¶ÁÆ÷ºÍ±êÇ©´òÓ¡»ú¡¢ÊÖ³ÖÊ½ºÍ¹Ì¶¨±êÇ©¶Á/Ğ´Éè±¸£¬Í¨¹ıTCP/IP»ò´®¿ÚÍ¨Ñ¶µÄ·½Ê½ÕûºÏµ½Í¬Ò»Æ½Ì¨ÖĞ£»</li>
-<li>Í¨¹ıÓÃ»§×Ô¶¨ÒåÈÎÎñµÄ»úÖÆ£¬Áé»îÖ§³Ö¸÷ÖÖÊµÊ±»ò·ÇÊµÊ±µÄTagÊı¾İ²É¼¯ºÍ»õÆ·´ò°üÂß¼­£»</li>
-<li>Ö§³Ö¶àÖÖ¿ª·Å¡¢±ê×¼µÄÍâ²¿½Ó¿ÚÍ¬²½»òÒì²½µØ´«ËÍTagĞÅÏ¢£¬ÈçSOAP¡¢HTTP¡¢JMS¡¢FTPµÈ£»TagĞÅÏ¢¿ÉÒÔÍ³Ò»µØ·â×°ÔÚPMLÎÄµµÖĞ·¢ËÍ¸øÍâ²¿ÏµÍ³£»</li>
-<li>Ìá¹©WebÒ³ÃæÖ±¹Û·½±ãµØ¹©ÓÃ»§ÅäÖÃ¡¢¼à¿ØÏµÍ³¼°Ö´ĞĞ±êÇ©µÄ¶Á/Ğ´Âß¼­£»</li>
-<li>Ö§³Ö¶àÖÖÊı¾İ¿âÏµÍ³£¬ÈçOracle¡¢MS SQL Server¡¢MySQL¡¢PostgreSQL¼°MaxDB£»</li>
-<li>MiddlewareÊÇJava±à³ÌµÄÏµÍ³Èí¼ş£¬¿ÉÔËĞĞÔÚ¶àÖÖ²Ù×÷ÏµÍ³ºÍApplication ServerÉÏ£»</li>
-<li>MiddlewareÊÇÆóÒµ¼¶Ó¦ÓÃ (Enterprise Application)£¬¾ßÓĞ¸ß¿É¿¿ĞÔ¡¢°²È«ĞÔ¡¢±ê×¼»¯¡¢¿ÉÀ©Õ¹ĞÔ¡¢¿ÉÅäÖÃĞÔ¼°Á¼ºÃµÄĞÔÄÜÖ¸±ê£»</li>
-</ul>
-
-<br>
-git repository: <a href="https://github.com/dongja3/RfidMiddleware.git">https://github.com/dongja3/RfidMiddleware.git</a>
-<br>
-<a href="dongja3.github.io/blog/files/Middleware_SRS_1.0.pdf>ĞèÇó¹æ¸ñËµÃ÷Êé(Software Requirement Specification)</a>
-
-</p>
-<p>{{ page.date | date_to_string }}</p>
+- - - 
+ l a y o u t :   d e f a u l t 
+ t i t l e :  NåRMPZv„N N*êR¨‹ÆR+N-•ôNö ( A u t o - I D   M i d d l e w a r e ) ,RN«~Ùg	— ‰v„gSË 
+ - - - 
+ < h 2 > { {   p a g e . t i t l e   } } < / h 2 > 
+ 
+ A u t o - I D   M i d d l e w a r ef/N N*N-•ôNö|û~ßÿ€ıYßTyÍNTxlNöS‚UFv„h{~‹û /Q™VhvøŞÿ‘Ç–ÆSÊ[XP¨‹Æ‹ûVhhÀmKR0v„u5[Ph{~ /ga_bxv„Oá`oÿ^vcĞO›c¥SãN S A P   A I I0 C I PTŒQvNÖ E R P|û~ßvøŞ0[ƒv„N;‰ryp¹f/ÿ 
+ < u l > 
+ < l i >SïNåTeöŞc¥ /c§R6YN*NTxlNöS‚UFv„ A u t o - I D‹û /Q™‹¾Yÿ < / l i > 
+ < l i >‘Çu( P l u g - i nTŒ A g e n tv„g:R6ÿbŠga_bxTŒ R F I Du5[Ph{~0h{~‹Æ‹ûVhTŒh{~bSSpg:0bKc_TŒVú[šh{~‹û /Q™‹¾YÿÇ T C P / I PbN2Sã‹¯v„e¹_etTR0TN ^sSğN-ÿ < / l i > 
+ < l i >Çu(b7ê[šNINûR¡v„g:R6ÿpum;e/cTyÍ[eöb—^[eöv„ T a gepcn‘Ç–ÆTŒ'TÁbSS;‘ÿ < / l i > 
+ < l i >e/cYyÍ_ e>0hQÆv„Yèc¥SãTkeb_keW0O  T a gOá`oÿY‚ S O A P0 H T T P0 J M S0 F T P{Iÿ T a gOá`oSïNå~ßN W0\ˆÅW( P M Le‡hcN-SÑ~ÙYè|û~ßÿ < / l i > 
+ < l i >cĞO› W e b˜u—bvô‰Âe¹O¿W0O›u(b7‘Mn0vÑc§|û~ßSÊbgˆLh{~v„‹û /Q™;‘ÿ < / l i > 
+ < l i >e/cYyÍepcn^“|û~ßÿY‚ O r a c l e0 M S   S Q L   S e r v e r0 M y S Q L0 P o s t g r e S Q LSÊ M a x D Bÿ < / l i > 
+ < l i > M i d d l e w a r ef/ J a v azv„|û~ßoNöÿSïĞˆLW(YyÍdÍO\|û~ßTŒ A p p l i c a t i o n   S e r v e rN
+ÿ < / l i > 
+ < l i > M i d d l e w a r ef/ON~§^”u(   ( E n t e r p r i s e   A p p l i c a t i o n )ÿQwg	šØSï—``'0[‰Qh`'0hQÆS0Sïbi\U`'0Sï‘Mn`'SÊ‚oY}v„`'€ıchÿ < / l i > 
+ < / u l > 
+ 
+ < b r > 
+ g i t   r e p o s i t o r y :   < a   h r e f = " h t t p s : / / g i t h u b . c o m / d o n g j a 3 / R f i d M i d d l e w a r e . g i t " > h t t p s : / / g i t h u b . c o m / d o n g j a 3 / R f i d M i d d l e w a r e . g i t < / a > 
+ < b r > 
+ < a   h r e f = " d o n g j a 3 . g i t h u b . i o / b l o g / f i l e s / M i d d l e w a r e _ S R S _ 1 . 0 . p d f >— lB‰Äh<‹ôfNf ( S o f t w a r e   R e q u i r e m e n t   S p e c i f i c a t i o n ) < / a > 
+ 
+ < / p > 
+ < p > { {   p a g e . d a t e   |   d a t e _ t o _ s t r i n g   } } < / p > 
