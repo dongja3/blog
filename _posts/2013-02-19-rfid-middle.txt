@@ -1,0 +1,25 @@
+---
+layout: default
+title: 以前做的一个自动识别中间件(Auto-ID Middleware),分享给有需要的朋友
+---
+<h2>{{ page.title }}</h2>
+
+Auto-ID Middleware是一个中间件系统，能够跟各种不同硬件厂商的标签读/写器相连，采集及存储识读器检测到的电子标签/条形码的信息，并提供接口与SAP AII、CIP和其他ERP系统相连。它的主要特点是：
+<ul>
+<li>可以同时连接/控制多个不同硬件厂商的Auto-ID读/写设备；</li>
+<li>采用Plug-in和Agent的机制，把条形码和RFID电子标签、标签识读器和标签打印机、手持式和固定标签读/写设备，通过TCP/IP或串口通讯的方式整合到同一平台中；</li>
+<li>通过用户自定义任务的机制，灵活支持各种实时或非实时的Tag数据采集和货品打包逻辑；</li>
+<li>支持多种开放、标准的外部接口同步或异步地传送Tag信息，如SOAP、HTTP、JMS、FTP等；Tag信息可以统一地封装在PML文档中发送给外部系统；</li>
+<li>提供Web页面直观方便地供用户配置、监控系统及执行标签的读/写逻辑；</li>
+<li>支持多种数据库系统，如Oracle、MS SQL Server、MySQL、PostgreSQL及MaxDB；</li>
+<li>Middleware是Java编程的系统软件，可运行在多种操作系统和Application Server上；</li>
+<li>Middleware是企业级应用 (Enterprise Application)，具有高可靠性、安全性、标准化、可扩展性、可配置性及良好的性能指标；</li>
+</ul>
+
+<br>
+git repository: <a href="https://github.com/dongja3/RfidMiddleware.git">https://github.com/dongja3/RfidMiddleware.git</a>
+<br>
+<a href="dongja3.github.io/blog/files/Middleware_SRS_1.0.pdf>需求规格说明书(Software Requirement Specification)</a>
+
+</p>
+<p>{{ page.date | date_to_string }}</p>
