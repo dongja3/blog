@@ -1,0 +1,19 @@
+---
+layout: default
+title: Session Failover (Session Ê§Ð§ÇÐ»»£©
+---
+
+<h2>{{ page.title }}</h2>
+<p> A concept used in a High Availability Cluster where sessions are not lost when a single application server goes offline, or is otherwise unreachable.
+
+For session failover to be successful, the user's HTTP session must be retrievable by at least one other server in the cluster, to enable that server to take over in case of a problem with the first server.
+
+This can be achieved using any of the following methods:
+<ul><li>
+Session Replication, where session changes are replicated to other members of the cluster, such that all members of the cluster always have a copy of the most recent session information. This is the method used by Tomcat to allow web applications to be distributable.</li>
+<li>Central Storage of Session Data, where all session data is stored in a central repository, accessible by all members of the cluste
+</li></ul>
+[Source URL] <a herf="http://wiki.metawerx.net/wiki/SessionFailover" target=_blank>http://wiki.metawerx.net/wiki/SessionFailover</a>
+
+</p>
+<p>{{ page.date | date_to_string }}</p>
