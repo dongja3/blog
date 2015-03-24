@@ -17,17 +17,17 @@ tomcat 自带的集群是将session复制到所有集群中的tomcat节点上面
 
 <h4>外部session cache</h4>
 将一个外部的session cache运行在集群的局域网中，用于存贮所有节点的session。
-1.外部cache有Memcached 和 Terracotta产品，使用外部cache需要考虑的问题
-2.外部cache的负载，所有请求都要到这里来拿session
-3.需要建立额外的application，包括管理，监控，外部cache 出问题时如何紧急处理流程也要考虑
-4.防止外部cache单节点故障，需要配置failover，因此对外部cache 建立集群或者最少建立一个fail-over 节点
+外部cache有Memcached 和 Terracotta产品，使用外部cache需要考虑的问题<
+<ul><li>外部cache的负载，所有请求都要到这里来拿session</li>
+<li>需要建立额外的application，包括管理，监控，外部cache 出问题时如何紧急处理流程也要考虑</li>
+<li>防止外部cache单节点故障，需要配置failover，因此对外部cache 建立集群或者最少建立一个fail-over 节点</li></ul>
 
 <h4>将session存储在cookie中</h4>
 还有一种简单的解决方案是将session存储在浏览器端的cookie中，session 在user第一次访问的时候返回给浏览器端并存贮到cookie中， 之后浏览器端的每个请求都会包含这个session的信息。
 
 我们需要一个servlet filter 做如下的事情
-1. 把http request中的cookie反序列化成Session
-2. 序列化session 成cookie并放入http response
+<ul><li>把http request中的cookie反序列化成Session</li>
+<li> 序列化session 成cookie并放入http response</li></ul>
 
 </p>
 <p>{{ page.date | date_to_string }}</p>
