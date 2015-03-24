@@ -1,6 +1,6 @@
----
+﻿---
 layout: default
-title: Session Failover (Session ʧЧ�л���
+title: Session Failover (Session 失效切换）
 ---
 
 <h2>{{ page.title }}</h2>
