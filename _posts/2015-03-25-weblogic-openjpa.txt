@@ -1,0 +1,51 @@
+---
+layout: default
+title: A JDBC Driver or DataSource class name must be specified in the ConnectionDriverName property
+---
+
+<h2>{{ page.title }}</h2>
+<p> Weblogic系统启动的时候遇到了下面的问题
+<openjpa-1.1.1-SNAPSHOT-r422266:965591 fatal user error> org.apache.openjpa.persistence.ArgumentException: A JDBC Driver or DataSource class name must be specified in the ConnectionDriverName property.
+at org.apache.openjpa.jdbc.schema.DataSourceFactory.newDataSource(DataSourceFactory.java:72)
+at org.apache.openjpa.jdbc.conf.JDBCConfigurationImpl.createConnectionFactory(JDBCConfigurationImpl.java:776)
+at org.apache.openjpa.jdbc.conf.JDBCConfigurationImpl.getDBDictionaryInstance(JDBCConfigurationImpl.java:553)
+at org.apache.openjpa.jdbc.meta.MappingRepository.endConfiguration(MappingRepository.java:1250)
+at org.apache.openjpa.lib.conf.Configurations.configureInstance(Configurations.java:505)
+at org.apache.openjpa.lib.conf.Configurations.configureInstance(Configurations.java:430)
+at org.apache.openjpa.lib.conf.PluginValue.instantiate(PluginValue.java:103)
+at org.apache.openjpa.conf.MetaDataRepositoryValue.instantiate(MetaDataRepositoryValue.java:68)
+at org.apache.openjpa.lib.conf.ObjectValue.instantiate(ObjectValue.java:83)
+at org.apache.openjpa.conf.OpenJPAConfigurationImpl.newMetaDataRepositoryInstance(OpenJPAConfigurationImpl.java:843)
+at org.apache.openjpa.conf.OpenJPAConfigurationImpl.getMetaDataRepositoryInstance(OpenJPAConfigurationImpl.java:834)
+at org.apache.openjpa.kernel.AbstractBrokerFactory.makeReadOnly(AbstractBrokerFactory.java:638)
+at org.apache.openjpa.kernel.AbstractBrokerFactory.newBroker(AbstractBrokerFactory.java:183)
+at org.apache.openjpa.kernel.DelegatingBrokerFactory.newBroker(DelegatingBrokerFactory.java:142)
+at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:199)
+at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:152)
+at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:56)
+at com.oocl.frm.audittrail.db.ConnectionFactory.getJpaConnection(ConnectionFactory.java:62)
+at com.oocl.frm.audittrail.db.ConnectionFactory.createConnection(ConnectionFactory.java:56)
+at com.oocl.frm.audittrail.db.ConfigObjectConveter.record2SysConfig(ConfigObjectConveter.java:327)
+at com.oocl.frm.audittrail.AuditTrailConfigLoader.loadConfig(AuditTrailConfigLoader.java:30)
+at com.oocl.frm.audittrail.SystemContext.<clinit>(SystemContext.java:34)
+
+
+打出ClassLoader 相关的信息
+Thread.currentThread() : [14] [Pooled Threads] [ACTIVE] ExecuteThread: '0' for queue: 'weblogic.kernel.Default (self-tuning)' XCID=0ef8b85e-b343-45a7-a491-15dbed68b333 SEQ=0
+Thread.currentThread().getContextClassLoader(): sun.misc.Launcher$AppClassLoader@93dee9
+0. class org.apache.openjpa.persistence.PersistenceProviderImpl
+1. class kodo.persistence.PersistenceProviderImpl
+2. class org.eclipse.persistence.jpa.PersistenceProvider
+
+
+发现JPA 的实现用的是OpenJPA 而不是我们需要的eclipseLink， 猜测weblogic默认的JPA 实现是openjpa，于是在server 的startup 里面修改了如下参数：
+Class path:
+{yourpath}/javax.persistence_1.1.0.0_2-0.jar ;{yourpath}/eclipselink.jar;%CLASSPATH%
+
+Arguments:
+-Dtoplink.xml.platform=oracle.toplink.platform.xml.jaxp.JAXPPlatform
+
+系统正常启动
+
+</p>
+<p>{{ page.date | date_to_string }}</p>
