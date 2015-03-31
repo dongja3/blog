@@ -5,7 +5,6 @@ title: Max concurrent settings for Current Browsers
 
 <h2>{{ page.title }}</h2>
 <p> 
-<img src="http://dongja3.github.io/blog/images/2015-03-31_01.jpg" /><br>
-<a href="http://www.stevesouders.com/blog/2008/03/20/roundup-on-parallel-connections/" target=_blank>Roundup on Parallel Connections</a>
+<img src="http://dongja3.github.io/blog/images/2015-03-31_01.jpg" />
 </p>
 <p>{{ page.date | date_to_string }}</p>
