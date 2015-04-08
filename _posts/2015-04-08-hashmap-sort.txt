@@ -1,0 +1,12 @@
+---
+layout: default
+title: Max concurrent settings for Current Browsers
+---
+
+<h2>{{ page.title }}</h2>
+<p> 
+HashMap是无序的，HashMap在put的时候是根据key的hashcode进行hash然后放入对应的地方。如果你按照顺序将数据put进HashMap中，然后发现遍历出HashMap的顺序跟put的顺序不同,除非在put的时候key已经按照hashcode排序好了。<br>
+如果想要遍历出HashMap的顺序跟put 进去的顺序一致，那么请使LinkedHashMap，LinkedHashMap也是一个HashMap,但是内部维持了一个双向链表,可以保持顺序<br>
+如果想对put进去的key进行排序，建议使用TreeMap ，并在new TreeMap的时候构造一个Comparator完成对key 的排序工作<br>
+</p>
+<p>{{ page.date | date_to_string }}</p>
