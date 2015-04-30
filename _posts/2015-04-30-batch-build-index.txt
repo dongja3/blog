@@ -1,0 +1,22 @@
+﻿---
+layout: default
+title: 批量重建索引SQL
+---
+
+<h2>{{ page.title }}</h2>
+<p> 
+declare<br>
+  sql_str varchar2(4000);<br>
+begin<br>
+  for l in (SELECT index_name<br>
+              FROM USER_INDEXES<br>
+             where table_owner = '***_OWNER'<br>
+               and index_type = 'NORMAL') loop<br>
+    sql_str := 'ALTER INDEX  ' || l.index_name || ' REBUILD';<br>
+    --dbms_output.put_line(sql_str);<br>
+    EXECUTE IMMEDIATE sql_str;<br>
+  end loop;<br>
+
+end;
+</p>
+<p>{{ page.date | date_to_string }}</p>

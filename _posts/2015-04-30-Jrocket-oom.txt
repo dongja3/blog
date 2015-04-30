@@ -1,0 +1,20 @@
+﻿---
+layout: default
+title: Enable weblogic debug mode
+---
+
+<h2>{{ page.title }}</h2>
+<p> 
+1. Generate heap dumps<br>
+Generating Java Heap Dumps in the HPROF Binary FormatHPROF is a heap profiling tool that produces heap dumps in a specific format that heap analysis tools can parse.
+You can set up the Oracle JRockit JVM to produce a dump of the Java heap in the HPROF binary format by using the following command-line options:<br>
+-XX:+HeapDumpOnOutOfMemoryError: Enables generation of Java heap dumps on out-of-memory errors<br>
+-XX:+HeapDumpOnCtrlBreak: Enables generation of Java heap dumps on pressing Ctrl-Break.<br>
+
+2. Analyze hep dump by Eclipse Memory Analyzer<br>
+Memory Analyzer (MAT)<br>
+http://www.eclipse.org/mat/<br><br>
+How to use Memory Analyzer<br>
+http://wiki.eclipse.org/index.php/MemoryAnalyzer
+</p>
+<p>{{ page.date | date_to_string }}</p>

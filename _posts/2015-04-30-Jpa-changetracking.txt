@@ -1,0 +1,52 @@
+﻿---
+layout: default
+title: Enable weblogic debug mode
+---
+
+<h2>{{ page.title }}</h2>
+<p> 
+Many enterprise business applications have such requirements thatthey should log their users' operations; who performs and when, records thatare inserted into, deleted from database, or are changed during thoseoperations, with a meaningful description about current state of those records.<br><br>
+
+To track and spot the processes, we need a change history for everytransaction. In enterprise applications, this is possible with data changelogging by having a built-in audit trail logging feature.<br><br>
+
+Trail logging has many benefits:<br>
+1- It helps audit personnel to detect fraud. It enables us to detectunauthorized or unapproved data manipulation. It only helps because fraud canbe possible by legal and normal records if nobody sufficiently controls thebusiness transactions.<br><br>
+
+2- It provides data change non-repudiation. That means when a user changes arecord and claim he/she didn't change the record, then its validity isprecisely determined via inspecting audit trail logs. Sometimes users may blamethe applications for transaction leaks, this is a very nice tool forapplication developers to justify the right side.<br><br>
+
+3- Users also use this facility. When a user notices that his/her insertedrecords are changed, by looking audit trails he can understand who changed therecords.<br><br>
+
+4- Developers also use it to determine abnormal application behavior. Anapplication may inadvertently alter some records and this can be easilydebugged if an audit trail is present.<br><br>
+
+ 
+
+Change Tracking  Framework<br>
+
+With Change Tracking Framework, developer could forget to do thosethings in a specific section of code, and the changes are made through theapplication will be logged correctly in a meaningful format.<br><br>
+
+Change Tracking Framework is intended to provide you informationon changes that are being make to the application tables, and you can retrieveinformation on kinds of changes (object is created, changed, removed etc.), whomake this change, with what object, the previous andnew property values and so on<br><br>
+
+ 
+
+How to design a JPA change tracking Framework will be discussed in next article.<br><br>
+
+ 
+
+Here I list few simple change tracking solutions for your reference<br>
+
+Eclipse Link Change Tracking<br>
+http://eclipse.org/eclipselink/documentation/2.5/jpa/extensions/a_changetracking.htm#BCGHFGBB<br>
+
+Capturing Property Changeswith Spring, JPA and Hibernate<br>
+http://duckranger.com/2012/12/capturing-property-changes-with-spring-jpa-and-hibernate/<br><br>
+
+Implementing Audit Trail using Entity Framework<br>
+http://www.codeproject.com/Articles/34491/Implementing-Audit-Trail-using-Entity-Framework-Pa<br><br>
+
+jpa-passive-logging-example<br>
+https://github.com/mgonto/jpa-passive-logging-example<br><br>
+
+How to passively log changes to your JPA Model (Add, Modify and delete) with example<br>
+http://gon.to/2012/12/15/how-to-passively-log-changes-to-your-jpa-model-add-modify-and-delete-with-example/<br><br>
+</p>
+<p>{{ page.date | date_to_string }}</p>

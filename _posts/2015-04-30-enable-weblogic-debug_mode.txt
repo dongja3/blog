@@ -1,0 +1,17 @@
+﻿---
+layout: default
+title: Enable weblogic debug mode
+---
+
+<h2>{{ page.title }}</h2>
+<p> 
+admin server:<br>
+C:\oracle\Middleware\user_projects\domains\base_domain\bin\setDomainEnv.cmd<br>
+add line set debugFlag=true<br>
+
+
+node manager server<br>
+Server start arguments<br>
+-Dtoplink.xml.platform=oracle.toplink.platform.xml.jaxp.JAXPPlatform  -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,address=8888,server=y,suspend=n<br>
+</p>
+<p>{{ page.date | date_to_string }}</p>
