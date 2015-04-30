@@ -1,4 +1,4 @@
-﻿---
+--
 layout: default
 title: 批量重建索引SQL
 ---

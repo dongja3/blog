@@ -1,4 +1,4 @@
-﻿---
+--
 layout: default
 title: Enable weblogic debug mode
 ---
@@ -35,7 +35,7 @@ How to design a JPA change tracking Framework will be discussed in next article.
 Here I list few simple change tracking solutions for your reference<br>
 
 Eclipse Link Change Tracking<br>
-http://eclipse.org/eclipselink/documentation/2.5/jpa/extensions/a_changetracking.htm#BCGHFGBB<br>
+http://eclipse.org/eclipselink/documentation/2.5/jpa/extensions/a_changetracking.htm#BCGHFGBB<br><br>
 
 Capturing Property Changeswith Spring, JPA and Hibernate<br>
 http://duckranger.com/2012/12/capturing-property-changes-with-spring-jpa-and-hibernate/<br><br>
